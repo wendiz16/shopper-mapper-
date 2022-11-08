@@ -76,6 +76,7 @@ export default function Results({
   // Unsplash API call for search result photos
   useEffect(() => {
     const unsplashApiKey = "EdiposNhsc-ZFDGSbSFb-BXp2VjbYeohfAUoUGdo2MA";
+    
     axios({
       url: `https://api.unsplash.com/search/photos`,
       method: "GET",
