@@ -63,23 +63,23 @@ const SearchItems = ({ apiKey }) => {
           <div className="searchSuggestions">
             <button onClick={fillSearch}>
               <FontAwesomeIcon className="icon" icon={faCoffee} />
-              &nbsp;Coffee
+              Coffee
             </button>
             <button onClick={fillSearch}>
               <FontAwesomeIcon className="icon" icon={faPizzaSlice} />
-              &nbsp;Pizza
+             Pizza
             </button>
             <button onClick={fillSearch}>
               <FontAwesomeIcon className="icon" icon={faTShirt} />
-              &nbsp;Mall
+             Mall
             </button>
             <button onClick={fillSearch}>
               <FontAwesomeIcon className="icon" icon={faBook} />
-              &nbsp;Bookshop
+              Bookshop
             </button>
             <button onClick={fillSearch}>
               <FontAwesomeIcon className="icon" icon={faUtensils} />
-              &nbsp;Restaurant
+             Restaurant
             </button>
           </div>
         </div>

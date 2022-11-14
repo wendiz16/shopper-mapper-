@@ -113,6 +113,9 @@ export default function Results({
   );
 
   // Update results list when component is mounted, or when radius changes
+  // let herekey='tnptZqUB2QPAVeDEbm_ocbT6HIXkyNzjf3Lx280iprY';
+  // apiKey = herekey;
+
   useEffect(() => {
     setLoadingState(true);
     const options = {
@@ -127,7 +130,9 @@ export default function Results({
     };
 
     window.L.mapquest.key = apiKey;
+
     window.L.mapquest.search().place(options, (error, response) => {
+      console.log("Try Searching")
       try {
         if (!searchResultsLayerDefined) {
           setSearchResultsLayerDefined(true);
@@ -146,6 +151,7 @@ export default function Results({
           searchResultsLayer.setSearchResponse(response);
         }
       } catch (error) {
+        console.log("Error is", error)
         navigate("/location");
       }
 

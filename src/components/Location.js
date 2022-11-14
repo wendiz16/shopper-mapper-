@@ -123,7 +123,7 @@ function Location({
             const currentLatitutde = locationsArray[0].latLng.lat;
 
             setLocationMarker(currentLatitutde, currentLongitude);
-            navigate(`/location/${currentLongitude}, ${currentLatitutde}`);
+            navigate(`/location/${currentLongitude},${currentLatitutde}`);
           } else {
             setDisplayMessage("No results found.");
             setTogglePopup(true);
@@ -159,7 +159,7 @@ function Location({
         setTimeout(() => {
           setLoadingState(false);
         }, 500);
-        navigate(`/location/${pos.coords.longitude}, ${pos.coords.latitude}`);
+        navigate(`/location/${pos.coords.longitude},${pos.coords.latitude}`);
         setLocationMarker(pos.coords.latitude, pos.coords.longitude);
       },
       () => {
